@@ -16,3 +16,7 @@
     background-color: aqua;
     flex: 1;
 }
+
+.container .row div.on {
+    background-color: black;
+}
