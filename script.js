@@ -1,5 +1,13 @@
 const startGridSize = 16
 const container = document.querySelector(".container")
+const randomColorCheck = document.querySelector(".randomize-colors")
+
+function getRandomColor() {
+    let red = Math.floor(Math.random()*255)
+    let green = Math.floor(Math.random()*255)
+    let blue = Math.floor(Math.random()*255)
+    return `rgb(${red}, ${green}, ${blue})`
+}
 
 function generateGrid(size) {
     document.querySelectorAll(".container div").forEach((div) => {
@@ -11,6 +19,10 @@ function generateGrid(size) {
         row.classList.add("row")
         for (let i = 0; i < size; i++) {
             const div = document.createElement("div")
+            if (randomColorCheck.checked) {
+                console.log(randomColorCheck.value)
+                div.style.background = getRandomColor()
+            }
             div.addEventListener("mouseenter", onHover)
             row.appendChild(div)
         }

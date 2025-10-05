@@ -32,3 +32,9 @@ body {
 .grid-size-button {
     padding: 18px;
 }
+
+.checkboxes {
+    display: flex;
+    width: 480px;
+    justify-content: space-evenly;
+}
