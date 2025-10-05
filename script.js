@@ -37,7 +37,7 @@ function changeGridSize(e) {
 }
 
 function onHover(e) {
-    e.target.classList.add("on")
+    e.target.style.background = "rgb(0, 0 ,0)"
 }
 
 generateGrid(startGridSize)
