@@ -1,9 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     gap: 1px;
     height: 480px;
     width: 480px;
+    margin: 12px;
 }
 
 .row {
