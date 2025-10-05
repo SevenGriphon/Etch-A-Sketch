@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: lightgray;
 }
 
 .container {
@@ -27,10 +28,20 @@ body {
 
 .grid-size-button {
     padding: 18px;
+    margin-bottom: 8px;
+    background-color:darkslategrey;
+    /* font-size: 18px; */
+    font-weight: bold;
 }
 
 .checkboxes {
     display: flex;
     width: 480px;
     justify-content: space-evenly;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 48px;
+    color:darkslategrey;
 }
