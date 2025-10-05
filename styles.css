@@ -11,6 +11,7 @@ body {
     height: 480px;
     width: 480px;
     margin: 12px;
+    background-color: black;
 }
 
 .row {
@@ -21,12 +22,7 @@ body {
 }
 
 .container .row div {
-    background-color: aqua;
     flex: 1;
-}
-
-.container .row div.on {
-    background-color: black;
 }
 
 .grid-size-button {
