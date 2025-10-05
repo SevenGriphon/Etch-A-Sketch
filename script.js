@@ -45,7 +45,14 @@ function getRGB(color) {
     return values
 }
 
+function isButtonDown(e) {
+    let buttons = e.buttons.toString(2) // binary values for each mouse button
+    let leftMB = buttons[buttons.length-1]
+    return leftMB === "1"
+}
+
 function onHover(e) {
+    if (!isButtonDown(e)) return
     if (ProgressiveColorCheck.checked) {
         let color = getRGB(e.target.style.background)
         let red = color[0]
